@@ -6,6 +6,7 @@ class Home3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.greenAccent,
       appBar: AppBar(
         title: Text('Skills'),
         backgroundColor: Colors.pinkAccent,
@@ -18,9 +19,10 @@ class Home3 extends StatelessWidget {
             child: Text(
               'Technical',
               style: TextStyle(
+                fontFamily: 'RobotoSlab',
                 fontSize: 35,
                 fontWeight: FontWeight.bold,
-                color: Colors.green,
+                color: Colors.brown,
                 letterSpacing: 1,
               ),
             ),
@@ -36,16 +38,19 @@ class Home3 extends StatelessWidget {
             margin: EdgeInsets.all(10),
             padding: EdgeInsets.fromLTRB(8, 8, 8, 5),
             child: Text(
-              "=> HTML                                          "
-              "=> CSS                                                  "
-              "=> C , C++                                        "
-              "=> AFTER EFFECTS                                       "
-              "=> PRIEMERE PRO                                     "
-              "=> CANVA                                           ",
+              "=> HTML                                                        "
+              "=> CSS                                                         "
+              "=> C , C++                                                     "
+              "=> C , C++                                                     "
+              "=> After Effects                                       "
+              "=> Priemere Pro                                    "
+              "=> Canva                                          ",
               textAlign: TextAlign.left,
               style: TextStyle(
+                color: Colors.indigo,
+                fontFamily: 'Lobster 400',
                 fontWeight: FontWeight.normal,
-                fontSize: 20,
+                fontSize: 23,
                 letterSpacing: 1,
               ),
             ),
@@ -56,9 +61,10 @@ class Home3 extends StatelessWidget {
             child: Text(
               'Non-Technical',
               style: TextStyle(
+                fontFamily: 'RobotoSlab',
                 fontSize: 35,
                 fontWeight: FontWeight.bold,
-                color: Colors.green,
+                color: Colors.brown,
                 letterSpacing: 1,
               ),
             ),
@@ -77,14 +83,16 @@ class Home3 extends StatelessWidget {
               "=> Communication skills                                          "
               "=> Management                                                  "
               "=> Yoga                                                   "
-              "=> Swimming                                       "
-              "=> Volleyball                                     "
+              "=> Swimming                                             "
+              "=> Volleyball                                             "
               "=> Ropeskipping                                             "
-              "=> Footwall (Goal-keeper)                                           ",
+              "=> Football (Goal-keeper)                                           ",
               textAlign: TextAlign.left,
               style: TextStyle(
+                color: Colors.indigo,
+                fontFamily: 'Lobster 400',
                 fontWeight: FontWeight.normal,
-                fontSize: 20,
+                fontSize: 23,
                 letterSpacing: 1,
               ),
             ),

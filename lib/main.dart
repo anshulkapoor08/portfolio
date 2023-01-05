@@ -38,7 +38,7 @@ class Myapp extends StatelessWidget {
                   margin: EdgeInsets.all(35.0),
                   child: CircleAvatar(
                     radius: 130,
-                    backgroundImage: AssetImage('image/sn.jpeg'),
+                    backgroundImage: AssetImage('image/kp5.jpg'),
                   ),
                 ),
                 SizedBox(height: 0),

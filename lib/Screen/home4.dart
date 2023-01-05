@@ -6,6 +6,7 @@ class Home4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.greenAccent,
       appBar: AppBar(
         title: Text('Awards'),
         backgroundColor: Colors.pinkAccent,
@@ -18,9 +19,10 @@ class Home4 extends StatelessWidget {
             child: Text(
               'Science Project ',
               style: TextStyle(
+                fontFamily: 'RobotoSlab',
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
-                color: Colors.green,
+                color: Colors.brown,
               ),
             ),
           ),
@@ -30,9 +32,11 @@ class Home4 extends StatelessWidget {
             child: Text(
               " I participated in science project in which i create a electric bell, which sounds when there is any chance of flood. ",
               style: TextStyle(
+                color: Colors.indigo,
+                fontFamily: 'Lobster 400',
                 fontWeight: FontWeight.normal,
-                fontSize: 20,
-                letterSpacing: 1,
+                fontSize: 25,
+                letterSpacing: 1.5,
               ),
             ),
           ),
@@ -49,10 +53,11 @@ class Home4 extends StatelessWidget {
             child: Text(
               'Sports ',
               style: TextStyle(
+                fontFamily: 'RobotoSlab',
                 fontSize: 30,
                 letterSpacing: 2,
                 fontWeight: FontWeight.bold,
-                color: Colors.green,
+                color: Colors.brown,
               ),
             ),
           ),
@@ -60,11 +65,13 @@ class Home4 extends StatelessWidget {
             margin: EdgeInsets.all(10),
             padding: EdgeInsets.fromLTRB(8, 8, 8, 5),
             child: Text(
-              " I am State player VOLLEY-BALL and National Gold Medalist      ROPE-SKIPPING. ",
+              " I am State player VOLLEY-BALL and National Gold Medalist ROPE-SKIPPING. ",
               style: TextStyle(
+                color: Colors.indigo,
+                fontFamily: 'Lobster 400',
                 fontWeight: FontWeight.normal,
-                fontSize: 20,
-                letterSpacing: 1,
+                fontSize: 25,
+                letterSpacing: 1.5,
               ),
             ),
           ),

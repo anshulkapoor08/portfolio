@@ -6,7 +6,7 @@ class Home2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // backgroundColor: Colors.deepPurpleAccent,
+      backgroundColor: Colors.greenAccent,
       appBar: AppBar(
         title: Text('About Me'),
         backgroundColor: Colors.pinkAccent,
@@ -19,9 +19,10 @@ class Home2 extends StatelessWidget {
             child: Text(
               'Hello Everyone...',
               style: TextStyle(
+                fontFamily: 'RobotoSlab',
                 fontSize: 27,
                 fontWeight: FontWeight.bold,
-                color: Colors.green,
+                color: Colors.brown,
               ),
             ),
           ),
@@ -39,9 +40,11 @@ class Home2 extends StatelessWidget {
               "My name is Anshul Chaurasiya. My hometown is Lalitpur."
               "I completed my 10th from BNSD Shiksha Niketan Inter College, Kanpur and 12th from the same school.",
               style: TextStyle(
+                color: Colors.indigo,
+                fontFamily: 'Lobster 400',
                 fontWeight: FontWeight.normal,
-                fontSize: 20,
-                letterSpacing: 1,
+                fontSize: 23,
+                letterSpacing: 1.5,
               ),
             ),
           ),
@@ -51,9 +54,10 @@ class Home2 extends StatelessWidget {
             child: Text(
               'Hobies & interest',
               style: TextStyle(
+                fontFamily: 'RobotoSlab',
                 fontSize: 27,
                 fontWeight: FontWeight.bold,
-                color: Colors.green,
+                color: Colors.brown,
               ),
             ),
           ),
@@ -74,9 +78,11 @@ class Home2 extends StatelessWidget {
               "I am interested in Martial-Art,Stunts,Dance,Standup etc. ",
               textAlign: TextAlign.start,
               style: TextStyle(
+                color: Colors.indigo,
+                fontFamily: 'Lobster 400',
                 fontWeight: FontWeight.normal,
-                fontSize: 20,
-                letterSpacing: 1,
+                fontSize: 23,
+                letterSpacing: 1.5,
               ),
             ),
           ),

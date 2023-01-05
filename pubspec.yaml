@@ -64,6 +64,7 @@ flutter:
       - image/sn.jpeg
       - image/kp1.jpeg
       - image/kp3.jpeg
+      - image/kp5.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -91,3 +92,9 @@ flutter:
   - family: CrimsonText
     fonts:
      - asset: fonts/CrimsonText-BoldItalic.ttf
+  - family: Lobster 400
+    fonts:
+     - asset: fonts/Lobster-Regular.ttf
+  - family: Shrikhand
+    fonts:
+     - asset: fonts/Shrikhand-Regular.ttf
