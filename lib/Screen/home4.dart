@@ -6,10 +6,10 @@ class Home4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.greenAccent,
+      backgroundColor: Colors.grey,
       appBar: AppBar(
         title: Text('Awards'),
-        backgroundColor: Colors.pinkAccent,
+        backgroundColor: Colors.teal,
       ),
       body: Column(
         children: [
@@ -22,7 +22,7 @@ class Home4 extends StatelessWidget {
                 fontFamily: 'RobotoSlab',
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
-                color: Colors.brown,
+                color: Colors.black87,
               ),
             ),
           ),
@@ -32,7 +32,7 @@ class Home4 extends StatelessWidget {
             child: Text(
               " I participated in science project in which i create a electric bell, which sounds when there is any chance of flood. ",
               style: TextStyle(
-                color: Colors.indigo,
+                color: Colors.white,
                 fontFamily: 'Lobster 400',
                 fontWeight: FontWeight.normal,
                 fontSize: 25,
@@ -57,7 +57,7 @@ class Home4 extends StatelessWidget {
                 fontSize: 30,
                 letterSpacing: 2,
                 fontWeight: FontWeight.bold,
-                color: Colors.brown,
+                color: Colors.black87,
               ),
             ),
           ),
@@ -67,7 +67,7 @@ class Home4 extends StatelessWidget {
             child: Text(
               " I am State player VOLLEY-BALL and National Gold Medalist ROPE-SKIPPING. ",
               style: TextStyle(
-                color: Colors.indigo,
+                color: Colors.white,
                 fontFamily: 'Lobster 400',
                 fontWeight: FontWeight.normal,
                 fontSize: 25,

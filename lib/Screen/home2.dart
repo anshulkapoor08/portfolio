@@ -6,10 +6,10 @@ class Home2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.greenAccent,
+      backgroundColor: Colors.grey,
       appBar: AppBar(
         title: Text('About Me'),
-        backgroundColor: Colors.pinkAccent,
+        backgroundColor: Colors.teal,
       ),
       body: Column(
         children: [
@@ -22,7 +22,7 @@ class Home2 extends StatelessWidget {
                 fontFamily: 'RobotoSlab',
                 fontSize: 27,
                 fontWeight: FontWeight.bold,
-                color: Colors.brown,
+                color: Colors.black87,
               ),
             ),
           ),
@@ -40,7 +40,7 @@ class Home2 extends StatelessWidget {
               "My name is Anshul Chaurasiya. My hometown is Lalitpur."
               "I completed my 10th from BNSD Shiksha Niketan Inter College, Kanpur and 12th from the same school.",
               style: TextStyle(
-                color: Colors.indigo,
+                color: Colors.white,
                 fontFamily: 'Lobster 400',
                 fontWeight: FontWeight.normal,
                 fontSize: 23,
@@ -57,7 +57,7 @@ class Home2 extends StatelessWidget {
                 fontFamily: 'RobotoSlab',
                 fontSize: 27,
                 fontWeight: FontWeight.bold,
-                color: Colors.brown,
+                color: Colors.black87,
               ),
             ),
           ),
@@ -78,7 +78,7 @@ class Home2 extends StatelessWidget {
               "I am interested in Martial-Art,Stunts,Dance,Standup etc. ",
               textAlign: TextAlign.start,
               style: TextStyle(
-                color: Colors.indigo,
+                color: Colors.white,
                 fontFamily: 'Lobster 400',
                 fontWeight: FontWeight.normal,
                 fontSize: 23,

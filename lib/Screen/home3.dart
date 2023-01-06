@@ -6,10 +6,10 @@ class Home3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.greenAccent,
+      backgroundColor: Colors.grey,
       appBar: AppBar(
         title: Text('Skills'),
-        backgroundColor: Colors.pinkAccent,
+        backgroundColor: Colors.teal,
       ),
       body: Column(
         children: [
@@ -22,7 +22,7 @@ class Home3 extends StatelessWidget {
                 fontFamily: 'RobotoSlab',
                 fontSize: 35,
                 fontWeight: FontWeight.bold,
-                color: Colors.brown,
+                color: Colors.black87,
                 letterSpacing: 1,
               ),
             ),
@@ -47,7 +47,7 @@ class Home3 extends StatelessWidget {
               "=> Canva                                          ",
               textAlign: TextAlign.left,
               style: TextStyle(
-                color: Colors.indigo,
+                color: Colors.white,
                 fontFamily: 'Lobster 400',
                 fontWeight: FontWeight.normal,
                 fontSize: 23,
@@ -64,7 +64,7 @@ class Home3 extends StatelessWidget {
                 fontFamily: 'RobotoSlab',
                 fontSize: 35,
                 fontWeight: FontWeight.bold,
-                color: Colors.brown,
+                color: Colors.black87,
                 letterSpacing: 1,
               ),
             ),
@@ -89,7 +89,7 @@ class Home3 extends StatelessWidget {
               "=> Football (Goal-keeper)                                           ",
               textAlign: TextAlign.left,
               style: TextStyle(
-                color: Colors.indigo,
+                color: Colors.white,
                 fontFamily: 'Lobster 400',
                 fontWeight: FontWeight.normal,
                 fontSize: 23,
