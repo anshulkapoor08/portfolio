@@ -137,17 +137,7 @@ class Myapp extends StatelessWidget {
                       ]),
                   child: Row(
                     children: [
-                      IconButton(
-                        onPressed: () {
-                          // Navigator.push(context,
-                          //     MaterialPageRoute(builder: (context) => Home()));
-                        },
-                        icon: Icon(
-                          Icons.home,
-                          size: 40,
-                          color: Colors.white,
-                        ),
-                      ),
+
                       SizedBox(
                         width: 25,
                       ),
