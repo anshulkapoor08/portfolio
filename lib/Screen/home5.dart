@@ -6,46 +6,39 @@ class Home5 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.greenAccent,
+      backgroundColor: Colors.blueGrey.shade500,
       appBar: AppBar(
-        title: Text('Contact Info'),
-        backgroundColor: Colors.pinkAccent,
+        title: const Text('Contact Info'),
+        backgroundColor: Colors.teal.shade50,
       ),
       body: Column(
         children: [
           Container(
-            margin: EdgeInsets.all(35.0),
-            child: CircleAvatar(
+            margin: const EdgeInsets.all(35.0),
+            child: const CircleAvatar(
               radius: 130,
               backgroundImage: AssetImage('image/kp3.jpeg'),
             ),
           ),
-          SizedBox(height: 0),
+          const SizedBox(height: 0),
           Container(
-            padding: EdgeInsets.all(4),
-            child: Text(
+            padding: const EdgeInsets.all(4),
+            child: const Text(
               'Anshul Chaurasiya',
               style: TextStyle(
                 fontFamily: 'RobotoSlab',
                 fontSize: 35.0,
-                color: Colors.brown,
+                color: Colors.white,
                 fontWeight: FontWeight.normal,
               ),
             ),
           ),
-          Text(
-            'anshulkapoor306@gmail.com',
-            style: TextStyle(
-              fontFamily: 'CrimsonText',
-              fontSize: 25.0,
-              color: Colors.indigo,
-            ),
-          ),
+
           Container(
             color: Colors.white,
-            padding: EdgeInsets.all(10),
-            margin: EdgeInsets.all(25),
-            child: Row(
+            padding: const EdgeInsets.all(10),
+            margin: const EdgeInsets.all(25),
+            child: const Row(
               children: <Widget>[
                 Icon(
                   Icons.phone,
@@ -66,9 +59,9 @@ class Home5 extends StatelessWidget {
           ),
           Container(
             color: Colors.white,
-            padding: EdgeInsets.all(10),
-            margin: EdgeInsets.fromLTRB(25, 6, 25, 10),
-            child: Row(
+            padding: const EdgeInsets.all(10),
+            margin: const EdgeInsets.fromLTRB(25, 6, 25, 10),
+            child: const Row(
               children: <Widget>[
                 Icon(
                   Icons.mail,

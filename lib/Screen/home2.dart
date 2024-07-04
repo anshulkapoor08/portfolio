@@ -6,87 +6,93 @@ class Home2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: Colors.blueGrey.shade500,
       appBar: AppBar(
-        title: Text('About Me'),
-        backgroundColor: Colors.teal,
+        title: const Text('About Me'),
+        backgroundColor: Colors.teal.shade50,
       ),
-      body: Column(
-        children: [
-          Container(
-            margin: EdgeInsets.all(10),
-            padding: EdgeInsets.fromLTRB(10, 20, 10, 10),
-            child: Text(
-              'Hello Everyone...',
-              style: TextStyle(
-                fontFamily: 'RobotoSlab',
-                fontSize: 27,
-                fontWeight: FontWeight.bold,
-                color: Colors.black87,
+      body: SafeArea(
+        child: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
+          child: Column(
+            children: [
+              Container(
+                margin: const EdgeInsets.all(10),
+                padding: const EdgeInsets.fromLTRB(10, 20, 10, 10),
+                child: const Text(
+                  'Hello Everyone...',
+                  style: TextStyle(
+                    fontFamily: 'RobotoSlab',
+                    fontSize: 27,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  ),
+                ),
               ),
-            ),
-          ),
-          Divider(
-            height: 20,
-            thickness: 2,
-            color: Colors.black38,
-            indent: 30,
-            endIndent: 30,
-          ),
-          Container(
-            margin: EdgeInsets.all(10),
-            padding: EdgeInsets.fromLTRB(8, 8, 8, 5),
-            child: Text(
-              "My name is Anshul Chaurasiya. My hometown is Lalitpur."
-              "I completed my 10th from BNSD Shiksha Niketan Inter College, Kanpur and 12th from the same school.",
-              style: TextStyle(
-                color: Colors.white,
-                fontFamily: 'Lobster 400',
-                fontWeight: FontWeight.normal,
-                fontSize: 23,
-                letterSpacing: 1.5,
+              const Divider(
+                height: 20,
+                thickness: 2,
+                color: Colors.black38,
+                indent: 30,
+                endIndent: 30,
               ),
-            ),
-          ),
-          Container(
-            margin: EdgeInsets.all(10),
-            padding: EdgeInsets.fromLTRB(10, 20, 10, 10),
-            child: Text(
-              'Hobies & interest',
-              style: TextStyle(
-                fontFamily: 'RobotoSlab',
-                fontSize: 27,
-                fontWeight: FontWeight.bold,
-                color: Colors.black87,
+              Container(
+                margin: const EdgeInsets.all(10),
+                padding: const EdgeInsets.fromLTRB(8, 8, 8, 5),
+                child: const Text(
+                  "My name is Anshul Chaurasiya. My hometown is Lalitpur."
+                      "I completed my 10th from BNSD Shiksha Niketan Inter College, Kanpur and 12th from the same school.",
+                  style: TextStyle(
+                    fontFamily: 'Lora',
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                    color: Colors.white,
+                    wordSpacing: 1.5,
+                  ),
+                ),
               ),
-            ),
-          ),
-          Divider(
-            height: 20,
-            thickness: 2,
-            color: Colors.black38,
-            indent: 30,
-            endIndent: 30,
-          ),
-          Container(
-            margin: EdgeInsets.all(10),
-            padding: EdgeInsets.fromLTRB(8, 8, 8, 5),
-            child: Text(
-              "My hobies and Interest changes regularly. But now my hobbies are playing field games like"
-              " Volleyball,Football,Cricket etc."
-              " I also like to maintain my body and personality thats why my called me #FITNESS-FREAK. "
-              "I am interested in Martial-Art,Stunts,Dance,Standup etc. ",
-              textAlign: TextAlign.start,
-              style: TextStyle(
-                color: Colors.white,
-                fontFamily: 'Lobster 400',
-                fontWeight: FontWeight.normal,
-                fontSize: 23,
-                letterSpacing: 1.5,
+              Container(
+                margin: const EdgeInsets.all(10),
+                padding: const EdgeInsets.fromLTRB(10, 20, 10, 10),
+                child: const Text(
+                  'Hobbies & Interests',
+                  style: TextStyle(
+                    fontFamily: 'RobotoSlab',
+                    fontSize: 27,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black87,
+                  ),
+                ),
               ),
-            ),
+              const Divider(
+                height: 20,
+                thickness: 2,
+                color: Colors.black38,
+                indent: 30,
+                endIndent: 30,
+              ),
+              Container(
+                margin: const EdgeInsets.all(10),
+                padding: const EdgeInsets.fromLTRB(8, 8, 8, 5),
+                child: const Text(
+                  "My hobbies and interests change regularly. But now my hobbies are playing field games like"
+                      " Volleyball, Football, Cricket, etc."
+                      " I also like to maintain my body and personality, that's why they call me #FITNESS-FREAK."
+                      " I am interested in Martial Arts, Stunts, Dance, Standup, etc.",
+                  textAlign: TextAlign.start,
+                  style: TextStyle(
+                    fontFamily: 'Lora',
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                    color: Colors.white,
+                    wordSpacing: 1.5,
+
+                  ),
+                ),
+              ),
+            ],
           ),
-        ],
+        ),
       ),
     );
   }

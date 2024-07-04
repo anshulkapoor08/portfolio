@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:prj02/Screen/home.dart';
 import 'package:prj02/Screen/home2.dart';
 import 'package:prj02/Screen/home3.dart';
 import 'package:prj02/Screen/home4.dart';
@@ -7,7 +6,7 @@ import 'package:prj02/Screen/home5.dart';
 import 'package:prj02/drawer_header.dart';
 
 void main() => runApp(
-      MaterialApp(
+      const MaterialApp(
         title: "App",
         home: Myapp(),
         debugShowCheckedModeBanner: false,
@@ -24,7 +23,7 @@ class Myapp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-          title: Text("Portfolio"),
+          title: const Text("Portfolio"),
         ),
         body: SafeArea(
           child: SingleChildScrollView(
@@ -35,16 +34,16 @@ class Myapp extends StatelessWidget {
 
               children: <Widget>[
                 Container(
-                  margin: EdgeInsets.all(35.0),
-                  child: CircleAvatar(
+                  margin: const EdgeInsets.all(35.0),
+                  child: const CircleAvatar(
                     radius: 130,
                     backgroundImage: AssetImage('image/kp5.jpg'),
                   ),
                 ),
-                SizedBox(height: 0),
+                const SizedBox(height: 0),
                 Container(
-                  padding: EdgeInsets.all(4),
-                  child: Text(
+                  padding: const EdgeInsets.all(4),
+                  child: const Text(
                     'Anshul Chaurasiya',
                     style: TextStyle(
                       fontFamily: 'RobotoSlab',
@@ -54,7 +53,7 @@ class Myapp extends StatelessWidget {
                     ),
                   ),
                 ),
-                Text(
+                const Text(
                   'Android Developer',
                   style: TextStyle(
                     fontFamily: 'PlayfairDisplay',
@@ -63,22 +62,34 @@ class Myapp extends StatelessWidget {
                     letterSpacing: 2.5,
                   ),
                 ),
-                Container(
-                  child: Row(
-                    children: <Widget>[
-                      // Icon(
-                      //   Icons.add_shopping_cart,
-                      //   color: Colors.blueGrey,
-                      // ),
-                    ],
-                  ),
+                const Row(
+                  children: <Widget>[
+                    // Icon(
+                    //   Icons.add_shopping_cart,
+                    //   color: Colors.blueGrey,
+                    // ),
+                  ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 50,
                 ),
                 Container(
-                  padding: EdgeInsets.all(15),
-                  child: Column(
+                  padding: const EdgeInsets.all(15),
+                  height: 190,
+                  width: 370,
+                  // color: Colors.grey,
+                  decoration: BoxDecoration(
+                      color: Colors.grey,
+                      borderRadius: BorderRadius.circular(13),
+                      boxShadow: const [
+                        BoxShadow(
+                          blurRadius: 10,
+                          spreadRadius: 6,
+                          color: Colors.black45,
+                        )
+                      ]),
+                  child: const Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
                         'Hello Everyone...',
@@ -89,46 +100,40 @@ class Myapp extends StatelessWidget {
                           letterSpacing: 1.0,
                         ),
                       ),
-                      Divider(
+                       SizedBox(
                         height: 10,
-                        color: Colors.grey,
                       ),
-                      Text(
-                        'My name is Anshul Chaurasiya. I am student of Ajay Kumar Garg Engneering College, Ghaziabad.'
-                        'I am an Android(Flutter) Developer.',
-                        style: TextStyle(
-                          fontFamily: 'Lora',
-                          fontSize: 20,
-                          color: Colors.white,
-                          letterSpacing: 0.5,
+                      SingleChildScrollView(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children:  [
+                            Text(
+                              'My name is Anshul Chaurasiya. I am student of Ajay Kumar Garg Engneering College, Ghaziabad.'
+                              'I am an Android (Flutter) Developer.',
+                              style: TextStyle(
+                                fontFamily: 'Lora',
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20,
+                                color: Colors.white,
+                                letterSpacing: 0.5,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ],
                   ),
-                  height: 180,
-                  width: 370,
-                  // color: Colors.grey,
-                  decoration: BoxDecoration(
-                      color: Colors.grey,
-                      borderRadius: BorderRadius.circular(13),
-                      boxShadow: [
-                        BoxShadow(
-                          blurRadius: 10,
-                          spreadRadius: 6,
-                          color: Colors.black45,
-                        )
-                      ]),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 Container(
-                  height: 60,
+                  height: 65,
                   width: 370,
                   decoration: BoxDecoration(
                       color: Colors.grey,
                       borderRadius: BorderRadius.circular(25),
-                      boxShadow: [
+                      boxShadow: const [
                         BoxShadow(
                           blurRadius: 10,
                           spreadRadius: 6,
@@ -136,93 +141,182 @@ class Myapp extends StatelessWidget {
                         )
                       ]),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-
-                      SizedBox(
-                        width: 25,
-                      ),
-                      IconButton(
-                        onPressed: () {
+                      GestureDetector(
+                        onTap: () {
                           Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => Home2()));
+                              MaterialPageRoute(builder: (context) => const Home2()));
                         },
-                        icon: Icon(
-                          Icons.summarize_outlined,
-                          size: 40,
-                          color: Colors.white,
+                        child:const Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: <Widget>[
+                            Icon(
+                              Icons.summarize_outlined,
+                              size: 40,
+                              color: Colors.white,
+                              semanticLabel: 'About Me',
+                            ),
+                             SizedBox(height: 4),
+                             Text(
+                              'About Me',
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
-                      SizedBox(
-                        width: 30,
-                      ),
-                      IconButton(
-                        onPressed: () {
+                      GestureDetector(
+                        onTap: () {
                           Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => Home3()));
+                              MaterialPageRoute(builder: (context) => const Home3()));
                         },
-                        icon: Icon(
-                          Icons.widgets_rounded,
-                          size: 40,
-                          color: Colors.white,
+                        child: const Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: <Widget>[
+                            Icon(
+                              Icons.widgets_rounded,
+                              size: 40,
+                              color: Colors.white,
+                              semanticLabel: 'Skills',
+                            ),
+                            SizedBox(height: 4),
+                            Text(
+                              'Skills',
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
-                      SizedBox(
-                        width: 33,
-                      ),
-                      IconButton(
-                        onPressed: () {
+                      GestureDetector(
+                        onTap: () {
                           Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => Home4()));
+                              MaterialPageRoute(builder: (context) => const Home4()));
                         },
-                        icon: Icon(
-                          Icons.stars_outlined,
-                          size: 40,
-                          color: Colors.white,
+                        child: const Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: <Widget>[
+                            Icon(
+                              Icons.stars_outlined,
+                              size: 40,
+                              color: Colors.white,
+                              semanticLabel: 'Achievements',
+                            ),
+                            SizedBox(height: 4),
+                            Text(
+                              'Achievements',
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
-                      SizedBox(
-                        width: 30,
-                      ),
-                      IconButton(
-                        onPressed: () {
+                      GestureDetector(
+                        onTap: () {
                           Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => Home5()));
+                              MaterialPageRoute(builder: (context) => const Home5()));
                         },
-                        icon: Icon(
-                          Icons.account_box_outlined,
-                          size: 40,
-                          color: Colors.white,
+                        child: const Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: <Widget>[
+                            Icon(
+                              Icons.account_box_outlined,
+                              size: 40,
+                              color: Colors.white,
+                              semanticLabel: 'Profile',
+                            ),
+                            SizedBox(height: 4),
+                            Text(
+                              'Profile',
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ],
                   ),
-                )
+                  ),
+
               ],
             ),
           ),
         ),
         drawer: Drawer(
-          child: Container(
-            child: Column(
-              children: [
-                MyHeaderDrawer(),
-                IconButton(
-                  onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => MyHeaderDrawer()));
-                  },
-                  icon: Icon(
-                    Icons.menu,
-                    size: 40,
-                    color: Colors.white,
+          child: ListView(
+            padding: const EdgeInsets.all(0),
+            children: [
+              const DrawerHeader(
+                decoration: BoxDecoration(
+                  color: Colors.blueGrey,
+                ), //BoxDecoration
+                child: UserAccountsDrawerHeader(
+                  decoration: BoxDecoration(color: Colors.green),
+                  accountName: Text(
+                    "Abhishek Mishra",
+                    style: TextStyle(fontSize: 18),
                   ),
-                ),
-              ],
-            ),
+                  accountEmail: Text("abhishekm977@gmail.com"),
+                  currentAccountPictureSize: Size.square(50),
+                  currentAccountPicture: CircleAvatar(
+                    backgroundColor: Color.fromARGB(255, 165, 255, 137),
+                    child: Text(
+                      "A",
+                      style: TextStyle(fontSize: 30.0, color: Colors.blue),
+                    ), //Text
+                  ), //circleAvatar
+                ), //UserAccountDrawerHeader
+              ), //DrawerHeader
+              ListTile(
+                leading: const Icon(Icons.person),
+                title: const Text(' My Profile '),
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.book),
+                title: const Text(' My Course '),
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.workspace_premium),
+                title: const Text(' Go Premium '),
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.video_label),
+                title: const Text(' Saved Videos '),
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.edit),
+                title: const Text(' Edit Profile '),
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.logout),
+                title: const Text('LogOut'),
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              ),
+            ],
           ),
-        ),
+        ), //Drawer
       ),
     );
   }
