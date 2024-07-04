@@ -6,10 +6,10 @@ class Home2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: Colors.blueGrey.shade500,
       appBar: AppBar(
         title: const Text('About Me'),
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.teal.shade50,
       ),
       body: SafeArea(
         child: SingleChildScrollView(
@@ -25,7 +25,7 @@ class Home2 extends StatelessWidget {
                     fontFamily: 'RobotoSlab',
                     fontSize: 27,
                     fontWeight: FontWeight.bold,
-                    color: Colors.black87,
+                    color: Colors.black,
                   ),
                 ),
               ),
@@ -43,11 +43,11 @@ class Home2 extends StatelessWidget {
                   "My name is Anshul Chaurasiya. My hometown is Lalitpur."
                       "I completed my 10th from BNSD Shiksha Niketan Inter College, Kanpur and 12th from the same school.",
                   style: TextStyle(
+                    fontFamily: 'Lora',
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
                     color: Colors.white,
-                    fontFamily: 'Lobster 400',
-                    fontWeight: FontWeight.normal,
-                    fontSize: 23,
-                    letterSpacing: 1.5,
+                    wordSpacing: 1.5,
                   ),
                 ),
               ),
@@ -81,11 +81,12 @@ class Home2 extends StatelessWidget {
                       " I am interested in Martial Arts, Stunts, Dance, Standup, etc.",
                   textAlign: TextAlign.start,
                   style: TextStyle(
+                    fontFamily: 'Lora',
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
                     color: Colors.white,
-                    fontFamily: 'Lobster 400',
-                    fontWeight: FontWeight.normal,
-                    fontSize: 23,
-                    letterSpacing: 1.5,
+                    wordSpacing: 1.5,
+
                   ),
                 ),
               ),

@@ -6,17 +6,17 @@ class Home4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: Colors.blueGrey.shade500,
       appBar: AppBar(
-        title: Text('Awards'),
-        backgroundColor: Colors.teal,
+        title: const Text('Awards'),
+        backgroundColor: Colors.teal.shade50,
       ),
       body: Column(
         children: [
           Container(
-            margin: EdgeInsets.all(10),
-            padding: EdgeInsets.fromLTRB(10, 20, 10, 10),
-            child: Text(
+            margin: const EdgeInsets.all(10),
+            padding: const EdgeInsets.fromLTRB(10, 20, 10, 10),
+            child: const Text(
               'Science Project ',
               style: TextStyle(
                 fontFamily: 'RobotoSlab',
@@ -27,20 +27,20 @@ class Home4 extends StatelessWidget {
             ),
           ),
           Container(
-            margin: EdgeInsets.all(10),
-            padding: EdgeInsets.fromLTRB(8, 8, 8, 5),
-            child: Text(
+            margin: const EdgeInsets.all(10),
+            padding: const EdgeInsets.fromLTRB(8, 8, 8, 5),
+            child: const Text(
               " I participated in science project in which i create a electric bell, which sounds when there is any chance of flood. ",
               style: TextStyle(
+                fontFamily: 'Lora',
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
                 color: Colors.white,
-                fontFamily: 'Lobster 400',
-                fontWeight: FontWeight.normal,
-                fontSize: 25,
-                letterSpacing: 1.5,
+                wordSpacing: 1.5,
               ),
             ),
           ),
-          Divider(
+          const Divider(
             height: 20,
             thickness: 2,
             color: Colors.black38,
@@ -48,30 +48,30 @@ class Home4 extends StatelessWidget {
             endIndent: 30,
           ),
           Container(
-            margin: EdgeInsets.all(10),
-            padding: EdgeInsets.fromLTRB(10, 20, 10, 10),
-            child: Text(
+            margin: const EdgeInsets.all(10),
+            padding: const EdgeInsets.fromLTRB(10, 20, 10, 10),
+            child: const Text(
               'Sports ',
               style: TextStyle(
                 fontFamily: 'RobotoSlab',
                 fontSize: 30,
-                letterSpacing: 2,
+
                 fontWeight: FontWeight.bold,
                 color: Colors.black87,
               ),
             ),
           ),
           Container(
-            margin: EdgeInsets.all(10),
-            padding: EdgeInsets.fromLTRB(8, 8, 8, 5),
-            child: Text(
+            margin: const EdgeInsets.all(10),
+            padding: const EdgeInsets.fromLTRB(8, 8, 8, 5),
+            child: const Text(
               " I am State player VOLLEY-BALL and National Gold Medalist ROPE-SKIPPING. ",
               style: TextStyle(
+                fontFamily: 'Lora',
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
                 color: Colors.white,
-                fontFamily: 'Lobster 400',
-                fontWeight: FontWeight.normal,
-                fontSize: 25,
-                letterSpacing: 1.5,
+                wordSpacing: 1.5,
               ),
             ),
           ),

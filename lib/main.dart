@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:prj02/Screen/home2.dart';
 import 'package:prj02/Screen/home3.dart';
@@ -129,7 +128,7 @@ class Myapp extends StatelessWidget {
                   height: 30,
                 ),
                 Container(
-                  height: 60,
+                  height: 65,
                   width: 370,
                   decoration: BoxDecoration(
                       color: Colors.grey,
@@ -142,93 +141,182 @@ class Myapp extends StatelessWidget {
                         )
                       ]),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-
-                      const SizedBox(
-                        width: 25,
-                      ),
-                      IconButton(
-                        onPressed: () {
+                      GestureDetector(
+                        onTap: () {
                           Navigator.push(context,
                               MaterialPageRoute(builder: (context) => const Home2()));
-
                         },
-                        icon: const Icon(
-                          Icons.summarize_outlined,
-                          size: 40,
-                          color: Colors.white,
+                        child:const Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: <Widget>[
+                            Icon(
+                              Icons.summarize_outlined,
+                              size: 40,
+                              color: Colors.white,
+                              semanticLabel: 'About Me',
+                            ),
+                             SizedBox(height: 4),
+                             Text(
+                              'About Me',
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                          ],
                         ),
-
                       ),
-                      const SizedBox(
-                        width: 30,
-                      ),
-                      IconButton(
-                        onPressed: () {
+                      GestureDetector(
+                        onTap: () {
                           Navigator.push(context,
                               MaterialPageRoute(builder: (context) => const Home3()));
                         },
-                        icon: const Icon(
-                          Icons.widgets_rounded,
-                          size: 40,
-                          color: Colors.white,
+                        child: const Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: <Widget>[
+                            Icon(
+                              Icons.widgets_rounded,
+                              size: 40,
+                              color: Colors.white,
+                              semanticLabel: 'Skills',
+                            ),
+                            SizedBox(height: 4),
+                            Text(
+                              'Skills',
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
-                      const SizedBox(
-                        width: 33,
-                      ),
-                      IconButton(
-                        onPressed: () {
+                      GestureDetector(
+                        onTap: () {
                           Navigator.push(context,
                               MaterialPageRoute(builder: (context) => const Home4()));
                         },
-                        icon: const Icon(
-                          Icons.stars_outlined,
-                          size: 40,
-                          color: Colors.white,
+                        child: const Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: <Widget>[
+                            Icon(
+                              Icons.stars_outlined,
+                              size: 40,
+                              color: Colors.white,
+                              semanticLabel: 'Achievements',
+                            ),
+                            SizedBox(height: 4),
+                            Text(
+                              'Achievements',
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
-                      const SizedBox(
-                        width: 30,
-                      ),
-                      IconButton(
-                        onPressed: () {
+                      GestureDetector(
+                        onTap: () {
                           Navigator.push(context,
                               MaterialPageRoute(builder: (context) => const Home5()));
                         },
-                        icon: const Icon(
-                          Icons.account_box_outlined,
-                          size: 40,
-                          color: Colors.white,
+                        child: const Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: <Widget>[
+                            Icon(
+                              Icons.account_box_outlined,
+                              size: 40,
+                              color: Colors.white,
+                              semanticLabel: 'Profile',
+                            ),
+                            SizedBox(height: 4),
+                            Text(
+                              'Profile',
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ],
                   ),
-                )
+                  ),
+
               ],
             ),
           ),
         ),
         drawer: Drawer(
-          child: Column(
+          child: ListView(
+            padding: const EdgeInsets.all(0),
             children: [
-              const MyHeaderDrawer(),
-              IconButton(
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const MyHeaderDrawer()));
+              const DrawerHeader(
+                decoration: BoxDecoration(
+                  color: Colors.blueGrey,
+                ), //BoxDecoration
+                child: UserAccountsDrawerHeader(
+                  decoration: BoxDecoration(color: Colors.green),
+                  accountName: Text(
+                    "Abhishek Mishra",
+                    style: TextStyle(fontSize: 18),
+                  ),
+                  accountEmail: Text("abhishekm977@gmail.com"),
+                  currentAccountPictureSize: Size.square(50),
+                  currentAccountPicture: CircleAvatar(
+                    backgroundColor: Color.fromARGB(255, 165, 255, 137),
+                    child: Text(
+                      "A",
+                      style: TextStyle(fontSize: 30.0, color: Colors.blue),
+                    ), //Text
+                  ), //circleAvatar
+                ), //UserAccountDrawerHeader
+              ), //DrawerHeader
+              ListTile(
+                leading: const Icon(Icons.person),
+                title: const Text(' My Profile '),
+                onTap: () {
+                  Navigator.pop(context);
                 },
-                icon: const Icon(
-                  Icons.menu,
-                  size: 40,
-                  color: Colors.white,
-                ),
+              ),
+              ListTile(
+                leading: const Icon(Icons.book),
+                title: const Text(' My Course '),
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.workspace_premium),
+                title: const Text(' Go Premium '),
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.video_label),
+                title: const Text(' Saved Videos '),
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.edit),
+                title: const Text(' Edit Profile '),
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.logout),
+                title: const Text('LogOut'),
+                onTap: () {
+                  Navigator.pop(context);
+                },
               ),
             ],
           ),
-        ),
+        ), //Drawer
       ),
     );
   }
