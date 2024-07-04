@@ -14,25 +14,25 @@ class _MyHeaderDrawerState extends State<MyHeaderDrawer> {
       color: Colors.indigo,
       width: double.infinity,
       height: 300,
-      padding: EdgeInsets.only(top: 20),
+      padding: const EdgeInsets.only(top: 20),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-            margin: EdgeInsets.only(bottom: 10),
+            margin: const EdgeInsets.only(bottom: 10),
             height: 150,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               shape: BoxShape.circle,
               image: DecorationImage(
                 image: AssetImage('image/kp1.jpeg'),
               ),
             ),
           ),
-          Text(
+          const Text(
             "Anshul Chaurasiya",
             style: TextStyle(color: Colors.white, fontSize: 20),
           ),
-          Text(
+          const Text(
             "anshul2110018@akgec.ac.in",
             style: TextStyle(color: Colors.white70),
           ),
